@@ -141,16 +141,39 @@ lifetime_span_temp           recovered_temp
 ## Repository Structure
 
 ```
-├── cohort_pipeline_v2.sql   — full SQL pipeline (PostgreSQL)
-├── README.md                — this file
-└── /csv                     — exported datasets for Power BI
-    ├── cohort_metrics.csv
-    ├── customer_metrics.csv
-    ├── dau.csv
-    ├── mau.csv
-    ├── recovered_users.csv
-    └── aov.csv
+├── README.md
+├── sql/
+│   └── cohort_pipeline_v2.sql
+└── screenshots/
+    ├── retention_heatmap.png
+    ├── user_growth.png
+    ├── revenue_analysis.png
+    ├── churn_heatmap.png
+    └── dau_mau_trends.png
 ```
+
+> **Source data files** (`sales_10k.csv`, `stores_10k.csv`) are not included due to file size.  
+> **Power BI report** (`cohort_analysis.pbix`) is not included due to file size.  
+> Dashboard screenshots are available in the `screenshots/` folder.
+
+---
+
+## Dashboard Preview
+
+### Retention Heatmap
+![Retention Heatmap](screenshots/retention_heatmap.png)
+
+### User Growth Overview
+![User Growth](screenshots/user_growth.png)
+
+### Revenue Analysis
+![Revenue Analysis](screenshots/revenue_analysis.png)
+
+### Churn Rate Heatmap
+![Churn Heatmap](screenshots/churn_heatmap.png)
+
+### DAU & MAU Trends
+![DAU MAU Trends](screenshots/dau_mau_trends.png)
 
 ---
 
@@ -177,3 +200,10 @@ lifetime_span_temp           recovered_temp
 - Add RFM segmentation (Recency, Frequency, Monetary) to `customer_metrics` for richer customer profiling
 - Add RFM segmentation (Recency, Frequency, Monetary) to `customer_metrics` — all required fields (last order date, total orders, total revenue) are already available in the pipeline
 - Add revenue forecasting: Power BI's built-in Forecast line (Analytics pane on a Line chart) provides a quick 3–6 month projection using exponential smoothing — no code required. For more accurate forecasting with seasonality, a Python visual using `prophet` or `statsmodels` can be embedded directly in the report, though it requires Python to be installed on the viewer's machine
+
+---
+
+## 📌 Author
+
+**Yuliia Nadtocha**  
+[LinkedIn](https://www.linkedin.com/in/yuliia-nadtocha)
