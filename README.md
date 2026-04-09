@@ -142,8 +142,10 @@ lifetime_span_temp           recovered_temp
 
 ```
 ├── README.md
+├── powerbi/
+│   └── cohort_analysis.pbix
 ├── sql/
-│   └── cohort_pipeline_v2.sql
+│   └── cohort_pipeline.sql
 └── screenshots/
     ├── retention_heatmap.png
     ├── user_growth.png
@@ -153,7 +155,8 @@ lifetime_span_temp           recovered_temp
 ```
 
 > **Source data files** (`sales_10k.csv`, `stores_10k.csv`) are not included due to file size.  
-> **Power BI report** (`cohort_analysis.pbix`) is not included due to file size.  
+> **Power BI report** (`cohort_analysis.pbix`)
+  [Download Power BI file](./powerbi/cohort_analysis.pbix)  
 > Dashboard screenshots are available in the `screenshots/` folder.
 
 ---
